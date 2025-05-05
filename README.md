@@ -1,6 +1,6 @@
 # Static Blog with Interactive WLJS Notebooks (Next.js + MDX)
 
-This is a basic **Next.js** project suitable for statically hosted websites and blogs. It renders [**WLJS Notebook**](https://wljs.io) cells exported as an MDX file. Learn how to export and publish your interactive notebooks [here](#).
+This is a basic **Next.js** project suitable for statically hosted websites and blogs. It renders [**WLJS Notebook**](https://wljs.io) cells exported as an MDX file. Learn how to export and publish your interactive notebooks [here](https://wljs.io/frontend/Exporting/MDX).
 
 ## Online Demo
 [The demo](https://jerryi.github.io/wljs-nextjs-example/) is hosted on GitHub Pages and deployed using this template.
