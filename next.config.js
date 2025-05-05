@@ -1,4 +1,7 @@
 const path = require('path');
+
+const isExport = process.env.EXPORT === 'true';
+
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
@@ -8,6 +11,7 @@ const withMDX = require('@next/mdx')({
         {
           fromDir: path.resolve(__dirname, 'pages'),      // Where MDX files live
           publicDir: path.resolve(__dirname, 'public'),       // Where to copy files
+          baseURL: isExport ? '/wljs-nextjs-example' : ''
         },
       ],
     ],
@@ -16,7 +20,7 @@ const withMDX = require('@next/mdx')({
  
 
 
-const isExport = process.env.EXPORT === 'true';
+
 
 const nextConfig = {
   ...(isExport && {

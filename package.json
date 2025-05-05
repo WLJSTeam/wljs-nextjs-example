@@ -17,6 +17,6 @@
   },
   "scripts": {
     "start": "npx next dev",
-    "export": "next build"
+    "export": "EXPORT=true next build"
   }
 }
