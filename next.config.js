@@ -14,6 +14,8 @@ const withMDX = require('@next/mdx')({
   },
 });
  
+
+
 const isExport = process.env.EXPORT === 'true';
 
 const nextConfig = {

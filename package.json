@@ -17,7 +17,6 @@
   },
   "scripts": {
     "start": "npx next dev",
-    "export": "next build && next export",
-    "deploy": "gh-pages -d out"
+    "export": "next build"
   }
 }
