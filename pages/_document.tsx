@@ -21,7 +21,7 @@ export default function Document() {
         <Head>
           {MakeHeaderScripts()}
         </Head>
-        <body className="bg-white text-gray-800 font-sans leading-relaxed px-6">
+        <body style={{display:"none"}} className="!block bg-white text-gray-800 font-sans leading-relaxed px-6">
           <Main />
           <NextScript />
         </body>
