@@ -7,7 +7,7 @@
     "fs-extra": "^11.3.0",
     "next": "^15.3.1",
     "remark-mdx": "^3.1.0",
-    "wljs-notebook-react": "^1.1.0"
+    "wljs-notebook-react": "^1.1.1"
   },
   "devDependencies": {
     "file-loader": "^6.2.0",
