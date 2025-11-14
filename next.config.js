@@ -28,6 +28,10 @@ const nextConfig = {
     basePath: '/wljs-nextjs-example',
     assetPrefix: '/wljs-nextjs-example',
   }),
+  env: {
+    // for client-side code:
+    NEXT_PUBLIC_ASSET_PREFIX: isExport ? `/wljs-nextjs-example` : '',
+  },
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   webpack: (config) => {
     config.module.rules.push({
