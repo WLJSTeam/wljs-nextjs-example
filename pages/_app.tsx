@@ -1,4 +1,3 @@
-import 'wljs-notebook-react/styles.css'
 
 // pages/_app.tsx
 

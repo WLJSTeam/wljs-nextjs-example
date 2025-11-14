@@ -8,7 +8,6 @@ This is a basic **Next.js** project suitable for statically hosted websites and 
 ## Stack
 - **Next.js**
 - **@next/mdx**
-- **Twind**
 - **remark-mdx**
 - **wljs-notebook-react** (see [here](https://github.com/JerryI/wljs-notebook-react))
 

@@ -1,8 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-import {HeaderScripts} from 'wljs-notebook-react/head.js'
+import {HeaderScripts, HeaderStyles} from 'wljs-notebook-react/head.js'
 
 import Script from 'next/script'
+
+
 
 
 export function MakeHeaderScripts () {
@@ -14,14 +16,24 @@ export function MakeHeaderScripts () {
       ));
 }
 
+export function MakeHeaderStyles () {
+    return HeaderStyles.map((style, index) => (
+        <link
+          rel='stylesheet'
+          href={style.attributes.href}
+        />
+      ));  
+}
+
 export default function Document() {
  
     return (
       <Html>
         <Head>
+          {MakeHeaderStyles()}
           {MakeHeaderScripts()}
         </Head>
-        <body style={{display:"none"}} className="!block bg-white text-gray-800 font-sans leading-relaxed px-6">
+        <body className="bg-white text-gray-800 px-6">
           <Main />
           <NextScript />
         </body>
